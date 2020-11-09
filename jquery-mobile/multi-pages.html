@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" 
+         href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   </head>
+   
+   <body>
+      <div data-role = "page" id = "hal-1">
+         <div data-role = "header">
+            <h2>Ini Header 1</h2>
+         </div>
+         
+         <div role = "main" class = "ui-content">
+            <h1>Selamat datang di halaman 1</h1>
+            <p> pergi ke halaman 2 <a href = "#hal-2">klik disini</a></p>
+         </div>
+         
+         <div data-role = "footer">
+            <h4>Ini Footer 1</h4>
+         </div>
+      </div>
+      
+      <div data-role = "page" id = "hal-2">
+         <div data-role = "header">
+            <h1>Ini Header 2</h1>
+         </div>
+         
+         <div role = "main" class = "ui-content">
+            <h1>Selamat datang di halaman 2</h1>
+            <p> pergi ke halaman 3 <a href = "#hal-3">klik disini</a></p>
+            <p>Kembali ke halaman 1 <a href="#hal-1">klik</a></p>
+         </div>
+         
+         <div data-role = "footer">
+            <h4>ini footer 2</h4>
+         </div>
+      </div>
+
+      <div data-role = "page" id = "hal-3">
+        <div data-role = "header">
+           <h1>Ini Header 3</h1>
+        </div>
+        
+        <div role = "main" class = "ui-content">
+           <h1>Selamat datang di halaman 3</h1>
+           <p> Kembali ke halaman 2 <a href = "#hal-2">klik disini</a></p>
+           <p>Kembali ke halaman 1 <a href="#hal-1">klik disini</a></p>
+        </div>
+        
+        <div data-role = "footer">
+           <h4>ini footer 3</h4>
+        </div>
+     </div>
+   </body>
+</html>

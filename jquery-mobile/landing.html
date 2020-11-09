@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   </head>
+
+<body>
+    <div data-role = "page" id = "home">
+        <div data-role="navbar" data-grid="c">
+            <ul>
+                <li><a data-icon="ui-btn ui-icon-home" href="#home" class="ui-btn-active">Home</a></li>
+                <li><a data-icon="ui-btn ui-icon-grid" href="#form">Form</a></li>
+                <li><a data-icon="ui-btn ui-icon-user" href="#login">Login</a></li>
+                <li><a data-icon="ui-btn ui-icon-user" href="#register">Register</a></li>
+            </ul>
+        </div>
+
+        <div role = "main" class = "ui-content">
+           <div data-role="header">Selamat datang di halaman Utama</div>
+           <p>Ini adalah halaman utama untuk soal 5 uts mobile app</p>
+        </div>
+        
+        <div data-role = "footer">
+           <h4>Copyright ©2020 . Solehudindt All Rights Reserved</h4>
+        </div>
+    </div>
+    
+    <!-- Halaman Form -->
+    <div data-role = "page" id = "form">
+        <div data-role="navbar" data-grid="c">
+            <ul>
+                <li><a data-icon="ui-btn ui-icon-home" href="#home">Home</a></li>
+                <li><a data-icon="ui-btn ui-icon-grid" href="#form" class="ui-btn-active">Form</a></li>
+                <li><a data-icon="ui-btn ui-icon-user" href="#login">Login</a></li>
+                <li><a data-icon="ui-btn ui-icon-user" href="#register">Register</a></li>
+            </ul>
+        </div>
+
+        <div role = "main" class = "ui-content">
+            <div data-role = "header">
+               <h2>Form Inputs</h2>
+            </div>
+            
+            <div data-role = "main" class = "ui-content">
+               <form method = "post" action = "jquery_mobile/demo1.php">
+                  <label for = "fname">Nama</label>
+                  <input type = "text" name = "fname">
+   
+                  <label for = "email">Email</label>
+                  <input type = "email" name = "email">
+   
+                  <label for = "date">Tanggal Lahir</label>
+                  <input type = "date" name = "date">
+   
+                  <label for = "file">Upload File</label>
+                  <input type = "file" name = "file">
+   
+                  Pilih Hobi
+                  <fieldset data-role = "controlgroup" name = "checkbox">
+                     <input type = "checkbox" name = "checkbox" id = "renang">
+                     <label for = "renang">Renang</label>
+   
+                     <input type = "checkbox" name = "checkbox" id = "game">
+                     <label for = "game">Video Game</label>
+   
+                     <input type = "checkbox" name = "checkbox" id = "membaca">
+                     <label for = "membaca">Membaca</label>
+                  </fieldset>
+   
+                  Jenis Kelamin
+                  <fieldset data-role = "controlgroup">
+                     <input type = "radio" name = "radio" id = "l">
+                     <label for = "l">Laki - Laki</label>
+   
+                     <input type = "radio" name = "radio" id = "p">
+                     <label for = "p">Perempuan</label>
+                  </fieldset>
+   
+                  <label for = "slider">Tinggi</label>
+                  <input type = "range" name = "slider" id = "slider" 
+                     value = "130" min = "0" max = "200" data-highlight = "true">
+   
+                  <input type = "submit" value = "Submit" data-inline = "true">
+               </form>
+            </div>
+         </div>
+    </div>
+    <!-- end form -->
+
+    <!-- Halaman Login -->
+    <div data-role = "page" id = "login">
+        <div data-role="navbar" data-grid="c">
+            <ul>
+                <li><a data-icon="ui-btn ui-icon-home" href="#home">Home</a></li>
+                <li><a data-icon="ui-btn ui-icon-grid" href="#form">Form</a></li>
+                <li><a data-icon="ui-btn ui-icon-user" href="#login" class="ui-btn-active">Login</a></li>
+                <li><a data-icon="ui-btn ui-icon-user" href="#register">Register</a></li>
+            </ul>
+        </div>
+
+        <div role = "main" class = "ui-content">
+            <div data-role = "header">
+               <h2>Login</h2>
+            </div>
+            
+            <div data-role = "main" class = "ui-content">
+               <form method = "post" action = "jquery_mobile/demo1.php">
+                  <label for = "email">Email</label>
+                  <input type = "email" name = "email">
+
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password">
+
+                  <input type = "submit" value = "Submit" data-inline = "true">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End login -->
+
+    <!-- Halaman Register -->
+    <div data-role = "page" id = "register">
+        <div data-role="navbar" data-grid="c">
+            <ul>
+                <li><a data-icon="ui-btn ui-icon-home" href="#home">Home</a></li>
+                <li><a data-icon="ui-btn ui-icon-grid" href="#form">Form</a></li>
+                <li><a data-icon="ui-btn ui-icon-user" href="#login">Login</a></li>
+                <li><a data-icon="ui-btn ui-icon-user" href="#register" class="ui-btn-active">Register</a></li>
+            </ul>
+        </div>
+
+        <div role = "main" class = "ui-content">
+            <div data-role = "header">
+               <h2>Register</h2>
+            </div>
+            
+            <div data-role = "main" class = "ui-content">
+               <form method = "post" action = "jquery_mobile/demo1.php">
+                
+                  <label for = "fname">Nama</label>
+                  <input type = "text" name = "fname">
+   
+                  <label for = "email">Email</label>
+                  <input type = "email" name = "email">
+   
+                  <label for = "date">Tanggal Lahir</label>
+                  <input type = "date" name = "date">
+
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password">
+
+                  <label for="alamat">Alamat</label>
+                  <input type="text-area" name="alamat" id="alamat">	
+                  <textarea cols="40" rows="8" name="alamat" id="alamat"></textarea>
+
+                  <input type = "submit" value = "Submit" data-inline = "true">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

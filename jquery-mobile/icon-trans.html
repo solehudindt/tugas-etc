@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   </head>
+   
+   <body>
+      <div data-role = "page" id = "page1">
+         <div data-role = "header">
+            <h2>ini Header</h2>
+         </div>
+         
+         <div data-role = "main" class = "ui-content">
+            <p>Ini adalah jawaban soal UTS app mobile mengenai icons dan transitions.</p>
+            Klik icon dibawah untuk ke halaman 2 dengan transisi slide
+            <a href = "#page2" data-transition = "slide">
+                <button class = "ui-btn ui-icon-arrow-r ui-btn-icon-notext"></button>
+            </a>
+         </div>
+
+         <div data-role = "footer">
+            <h2>Ini Footer</h2>
+         </div>
+      </div>
+
+      <div data-role = "page" id = "page2">
+         <div data-role = "header">
+            <h2>Ini Header</h2>
+         </div>
+
+         <div data-role = "main" class = "ui-content">
+            <p>Klik icon dibawah untuk kembali ke halaman 1 dengan transisi slide.</p>
+            <a href = "#page1" data-transition = "slide">
+                <button class = "ui-btn ui-btn-icon-notext ui-icon-arrow-l"></button>
+            </a>
+         </div>
+
+         <div data-role = "footer">
+            <h2>ini Footer</h2>
+         </div>
+      </div>
+      
+   </body>
+</html>
